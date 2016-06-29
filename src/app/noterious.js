@@ -17,6 +17,12 @@ angular.module('noterious', [
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
+      .state('boards',{
+        url: '/boards',
+        templateUrl: 'app/boards/boards.tmpl.html',
+        controller: 'BoardsCtrl',
+        controllerAs: 'boards'
+      })
     ;
 
     /* HINT: Add this to your boards route to force authentication
